@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Cinema App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+
+
+    <link href='https://fonts.googleapis.com/css?family=Lato|Roboto:400,900' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+
+    <section class="first-page">
+
+        <header class="header">
+            <div class="container">
+                <div class="header__poster-container">
+                    <img class="header__poster" src="/img/mortal-kombat-21-poster.jpg" alt="MK21">
+                    <a class="btn trailer-btn" href="https://youtu.be/NYH2sLid0Zc" title="click to watch trailer"
+                        target="_blank">
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+            <div class="container">
+                <article id="mainComponent">
+                    <div class="movie left-block">
+                        <section class="movie__basic-info">
+                            <p class="movie__year">2021</p>
+                            <p class="movie__genres">Action</p>
+                            <p class="movie__genres">Fantasy</p>
+                            <p class="movie__genres">Sci-fi</p>
+                            <p class="movie__genres">18+</p>
+                        </section>
+
+                        <section class="movie__main-info">
+                            <h2 class="movie__title">Mortal Kombat</h2>
+                            <div class="movie__rating">
+
+                                <p class="movie__rating-imdb">IMDb 7.0</p>
+                                <img class="star" src="/img/bluestar.png" alt="star">
+                                <img class="star" src="/img/bluestar.png" alt="star">
+                                <img class="star" src="/img/bluestar.png" alt="star">
+                                <img class="star" src="/img/bluestar.png" alt="star">
+                                <img class="star" src="/img/skybluestar.png" alt="star">
+                            </div>
+                        </section>
+                    </div>
+
+                    <div class="description">
+                        <p>MMA fighter Cole Young seeks out Earth's greatest champions in order to stand against the
+                        enemies of Outworld in a high stakes battle for the universe.</p>
+                        <p><span class="strong">Director</span>: Simon McQuoid </p>
+                        <p><span class="strong">Writers</span>: Greg Russo, Dave Callaham</p>
+                        <p><span class="strong">Stars</span>: Lewis Tan, Jessica McNamee, Josh Lawson</p>
+                    </div>
+
+                    <div id="sliderContainer"></div>
+
+                    <button class="btn btn-pick" id="buttonPick">
+                        <span class="strong">BOOK SEATS</span>
+                    </button>
+
+                </article>
+            </div>
+        </main>
+        
+        <div class="modal__alert">
+            <div class="modal__content">
+                <span class="close__alert">&times;</span>
+                <p class="select-date">PLEASE SELECT THE DATE</p>
+            </div>    
+        </div>
+
+    </section> <!-- first page -->
+  
+    <!--second-page -->
+    <div class="second-page">
+
+        <header class="header">
+            <div class="container"></div>
+        </header>
+
+        <main class="main">
+            <div class="container">
+                <article>
+                    
+                    <div class="movie right-block">
+                        <button class="back-btn">
+                            <div class="back-btn__popup">
+                                BACK
+                            </div>
+                        </button>
+                        <section class="movie__basic-info">
+                            <p class="movie__year">2021</p>
+                            <p class="movie__genres">Action, Adventure, Fantasy</p>
+                        </section>
+                        <section class="movie__main-info">
+                            <h2 class="movie__title">Mortal Kombat</h2>
+                            <div class="movie__rating">
+                                <p class="movie__rating-imdb"> IMDb 7.0</p>
+                                <img class="star" src="/img/bluestar.png" alt="star">
+                                <img class="star" src="/img/bluestar.png" alt="star">
+                                <img class="star" src="/img/bluestar.png" alt="star">
+                                <img class="star" src="/img/bluestar.png" alt="star">
+                                <img class="star" src="/img/skybluestar.png" alt="star">
+                            </div>
+                        </section>
+                    </div>
+
+                    <div class="screen-container">
+                        <div class="screen"></div>
+                        <div class="shadow"></div>
+                    </div>
+
+                    <div class="seats">
+                        <div class="row row1">
+                            <div class="seat seat1"></div>
+                            <div class="seat seat2"></div>
+                            <div class="seat seat3"></div>
+                            <div class="seat seat4"></div>
+                            <div class="seat seat5"></div>
+                            <div class="seat seat6"></div>
+                            <div class="seat seat7"></div>
+                            <div class="seat seat8"></div>
+                            <div class="seat seat9"></div>
+                            <div class="seat seat10"></div>
+                            <div class="seat seat11"></div>
+                            <div class="seat seat12"></div>
+                        </div>
+                        <div class="row row2">
+                            <div class="seat seat1"></div>
+                            <div class="seat seat2"></div>
+                            <div class="seat seat3"></div>
+                            <div class="seat seat4"></div>
+                            <div class="seat seat5"></div>
+                            <div class="seat seat6"></div>
+                            <div class="seat seat7"></div>
+                            <div class="seat seat8"></div>
+                            <div class="seat seat9"></div>
+                            <div class="seat seat10"></div>
+                            <div class="seat seat11"></div>
+                            <div class="seat seat12"></div>
+                        </div>
+                        <div class="row row3">
+                            <div class="seat seat1"></div>
+                            <div class="seat seat2"></div>
+                            <div class="seat seat3"></div>
+                            <div class="seat seat4"></div>
+                            <div class="seat seat5"></div>
+                            <div class="seat seat6"></div>
+                            <div class="seat seat7"></div>
+                            <div class="seat seat8"></div>
+                            <div class="seat seat9"></div>
+                            <div class="seat seat10"></div>
+                            <div class="seat seat11"></div>
+                            <div class="seat seat12"></div>
+                        </div>
+                        <div class="row row4">
+                            <div class="seat seat1"></div>
+                            <div class="seat seat2"></div>
+                            <div class="seat seat3"></div>
+                            <div class="seat seat4"></div>
+                            <div class="seat seat5"></div>
+                            <div class="seat seat6"></div>
+                            <div class="seat seat7"></div>
+                            <div class="seat seat8"></div>
+                            <div class="seat seat9"></div>
+                            <div class="seat seat10"></div>
+                            <div class="seat seat11"></div>
+                            <div class="seat seat12"></div>
+                        </div>
+                        <div class="row row5">
+                            <div class="seat seat1"></div>
+                            <div class="seat seat2"></div>
+                            <div class="seat seat3"></div>
+                            <div class="seat seat4"></div>
+                            <div class="seat seat5"></div>
+                            <div class="seat seat6"></div>
+                            <div class="seat seat7"></div>
+                            <div class="seat seat8"></div>
+                            <div class="seat seat9"></div>
+                            <div class="seat seat10"></div>
+                            <div class="seat seat11"></div>
+                            <div class="seat seat12"></div>
+                        </div>
+                        <div class="row row6">
+                            <div class="seat seat1"></div>
+                            <div class="seat seat2"></div>
+                            <div class="seat seat3"></div>
+                            <div class="seat seat4"></div>
+                            <div class="seat seat5"></div>
+                            <div class="seat seat6"></div>
+                            <div class="seat seat7"></div>
+                            <div class="seat seat8"></div>
+                            <div class="seat seat9"></div>
+                            <div class="seat seat10"></div>
+                            <div class="seat seat11"></div>
+                            <div class="seat seat12"></div>
+                        </div>
+                    </div>
+                    <div class="seat-description">
+                        <div class="occupied"></div>
+                        <p>Occupied</p>
+                        <div class="free"></div>
+                        <p>Free</p>
+                    </div>
+                    <div class="payment">
+                        <h4>Price:</h4>
+                        <p class="price">13$</p>
+                    </div>
+                    <div class="payment total">
+                        <h4>Total:</h4>
+                        <p class="price" id="total">0</p>
+                    </div>
+                    <button class="btn btn-pick" id="buttonPay"><span>PURCHASE TICKETS</span></button>
+                </article>
+            </div>
+        </main>
+ 
+        <div class="modal">
+            <span class="close-modal">&times;</span>
+            <div class="order-data"></div>
+            <div class="total-price">Total: <span class="totalPrice"></span></div>
+            <button class="pay"  type="submit">Buy now</button>
+               
+        </div>
+    </div>
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./index.js" type="module"></script>
+</body>
+
+</html>
